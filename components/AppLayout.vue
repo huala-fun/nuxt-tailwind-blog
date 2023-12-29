@@ -1,8 +1,9 @@
 <script setup lang="ts">
-const { cover } = useAppConfig()
+const { cover } = useAppConfig();
 </script>
 
 <template>
+  <!-- <Background /> -->
   <div class="sm:pt-6 sm:pb-10">
     <Html lang="en" />
     <Meta property="og:image" :content="cover" />

@@ -3,7 +3,6 @@
     <NuxtPage />
   </AppLayout>
 </template>
-
 <style>
 /* 通用滚动条样式，适用于所有滚动条 */
 *::-webkit-scrollbar {
@@ -23,5 +22,4 @@
 *::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
-
 </style>
