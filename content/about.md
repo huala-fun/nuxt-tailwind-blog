@@ -1,18 +1,14 @@
-# About Content v2
+---
+title: About
+description: About the site
+---
 
-```js
-import colors from "tailwindcss/colors";
-import typography from "@tailwindcss/typography";
+> 记录一些东西，也许有用。
 
-export default {
-  darkMode: "class",
-  plugins: [typography()],
-  theme: {
-    extend: {
-      colors: {
-      },
-    },
-  },
-};
+I'm a 全栈开发者。
 
-```
+[个人主页](https://www.huala.fun)
+
+[Github](https://github.com/huala-fun)
+
+个人邮箱：[hualafun@gmail.com](mailto:hualafun@gmail.com)
