@@ -7,4 +7,9 @@
     @apply bg-yellow-300;
     color: #000;
   }
+
+  body,
+  #__nuxt {
+    @apply min-h-screen;
+  }
 }
