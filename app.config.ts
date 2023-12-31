@@ -1,7 +1,7 @@
 export default defineAppConfig({
   socials: {
     twitter: '',
-    github: '',
+    github: 'huala-fun/nuxt-tailwind-blog',
     mastodon: '',
   },
   nuxtIcon: {

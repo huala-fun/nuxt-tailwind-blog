@@ -7,7 +7,7 @@ const appConfig = useAppConfig();
     <!-- Navigation -->
     <div class="text-gray-700 dark:text-gray-200">
       <NuxtLink key="/" to="/" active-class="font-bold" class="mr-6">
-        首页
+        Home
       </NuxtLink>
       <NuxtLink key="/about" to="/about" active-class="font-bold" class="mr-6">
         About
@@ -25,6 +25,7 @@ const appConfig = useAppConfig();
       <a
         v-if="appConfig.socials?.github"
         :href="`https://github.com/${appConfig.socials?.github}`"
+        target="_blank"
         title="GitHub"
         class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300"
         ><Icon name="fa-brands:github" class="w-5 h-5"
