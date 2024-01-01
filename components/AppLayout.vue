@@ -4,7 +4,7 @@ const { cover } = useAppConfig();
 
 <template>
   <!-- <Background /> -->
-  <div class="sm:pt-6 sm:pb-10">
+  <div class="sm:pt-6 sm:pb-10 max-w-2xl mx-auto">
     <Html lang="en" />
     <Meta property="og:image" :content="cover" />
     <Meta name="twitter:card" content="summary_large_image" />

@@ -3,13 +3,13 @@ const appConfig = useAppConfig();
 </script>
 
 <template>
-  <div class="flex justify-center max-w-2xl px-4 py-4 mx-auto sm:px-8">
+  <div class="flex justify-center px-4 py-4 mx-auto sm:px-8 gap-4">
     <!-- Navigation -->
-    <div class="text-gray-700 dark:text-gray-200">
-      <NuxtLink key="/" to="/" active-class="font-bold" class="mr-6">
+    <div class="text-gray-700 dark:text-gray-200 flex gap-4">
+      <NuxtLink key="/" to="/" active-class="font-bold" >
         Home
       </NuxtLink>
-      <NuxtLink key="/about" to="/about" active-class="font-bold" class="mr-6">
+      <NuxtLink key="/about" to="/about" active-class="font-bold">
         About
       </NuxtLink>
     </div>

@@ -3,6 +3,14 @@
     <NuxtPage />
   </AppLayout>
 </template>
+<script setup lang="ts">
+const title = "BLOG"
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${title} - ${titleChunk}` : title;
+  },
+});
+</script>
 <style>
 /* 通用滚动条样式，适用于所有滚动条 */
 *::-webkit-scrollbar {
