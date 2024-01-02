@@ -1,5 +1,5 @@
 <template>
-  <button id="copy" ref="copy" class="copy absolute top-1 right-2">
+  <button id="copy" ref="copy" class="copy absolute top-1 right-2 bg-slate-500   dark:bg-slate-200  rounded-sm w-8 h-5 text-sm dark:text-gray-600">
     {{ state }}
   </button>
 </template>
