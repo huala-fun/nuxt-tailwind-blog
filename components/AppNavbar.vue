@@ -6,9 +6,7 @@ const appConfig = useAppConfig();
   <div class="flex justify-center px-4 py-4 mx-auto sm:px-8 gap-4">
     <!-- Navigation -->
     <div class="text-gray-700 dark:text-gray-200 flex gap-4">
-      <NuxtLink key="/" to="/" active-class="font-bold" >
-        Home
-      </NuxtLink>
+      <NuxtLink key="/" to="/" active-class="font-bold"> Home </NuxtLink>
       <NuxtLink key="/about" to="/about" active-class="font-bold">
         About
       </NuxtLink>
@@ -16,26 +14,12 @@ const appConfig = useAppConfig();
     <!-- Social icons & Color Mode -->
     <div class="space-x-3 transition text-gray-500">
       <a
-        v-if="appConfig.socials?.twitter"
-        :href="`https://twitter.com/${appConfig.socials?.twitter}`"
-        title="Twitter"
-        class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300"
-        ><Icon name="fa-brands:twitter" class="w-5 h-5"
-      /></a>
-      <a
         v-if="appConfig.socials?.github"
         :href="`https://github.com/${appConfig.socials?.github}`"
         target="_blank"
         title="GitHub"
         class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300"
         ><Icon name="fa-brands:github" class="w-5 h-5"
-      /></a>
-      <a
-        v-if="appConfig.socials?.mastodon"
-        :href="`https://elk.zone/${appConfig.socials?.mastodon}`"
-        title="Mastodon"
-        class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300"
-        ><Icon name="fa-brands:mastodon" class="w-5 h-5"
       /></a>
       <ColorModeSwitch
         class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300" />
