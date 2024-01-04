@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     cssPath: "~/main.css",
   },
   modules: [
+    "nuxt-content-assets",
     "@nuxt/content",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",

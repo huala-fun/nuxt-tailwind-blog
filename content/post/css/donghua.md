@@ -22,19 +22,19 @@ tags:
 
 使用 CSS 制作动画的一种方式就是使用 transition 属性。啥是 transition ? transition 指从一个“状态”到另一个“状态”的动画模拟。
 
-<Image src="/posts/css/ab.png"  width="400" height="404" alt="Image" />
+<Image src="assets/ab.png"  width="400" height="404" alt="Image" />
 
 当我们告诉浏览器，我们想在某个元素上使用 transition 时，就是让浏览器在状态的变化过程中对属性的值进行自动插值。
 
-<Image src="/posts/css/ab_animated.png"  width="400" height="404" alt="Image" />
+<Image src="assets/ab_animated.png"  width="400" height="404" alt="Image" />
 
 举个例子，我们可以在一个元素鼠标悬停的时候，使用过渡（transition）来改变元素的样式，让浏览器产生从起始状态到终止状态的平滑的过渡效果。
 
-<Image src="/posts/css/button.png"  width="400" height="404" alt="Image" />
+<Image src="assets/button.png"  width="400" height="404" alt="Image" />
 
 我们可以在元素的很多属性上创建过渡效果。我们可以控制过渡的快慢，延迟，还可以用 timing function 控制过渡具体的变化速度。来看几个例子。
 
-<Image src="/posts/css/transitions-min.gif"  width="400" height="404" alt="Image" />
+<Image src="assets/transitions-min.gif"  width="400" height="404" alt="Image" />
 <b>总结：</b>
  transition 是指从一个状态到另一个状态的变化。比如当鼠标在某个元素上悬停时，我们会修改它的样式，采用 transition 可以创建一个平滑的动画效果。
 
@@ -93,9 +93,9 @@ button:hover {
 
 当然也有不同，过渡指从一个状态到另一个状态的平滑的变化过程，而动画可以是多个“状态”间的变化。
 
-<Image src="/posts/css/ab-min.gif"  width="400" height="404" alt="Image" />
+<Image src="assets/ab-min.gif"  width="400" height="404" alt="Image" />
 
-<Image src="/posts/css/abc.png"  width="400" height="404" alt="Image" />
+<Image src="assets/abc.png"  width="400" height="404" alt="Image" />
 
 动画更适合相对复杂的场景。上面的例子中有三种状态（A，B，C）。transition 只会从 A 开始一直到 C 结束，而 animation 允许我们添加状态 B，并且从 A 到 B 再到 C 经历完整的 3 个状态。
 
@@ -125,7 +125,7 @@ keyframes 是用来描述动画过程中一系列变化的。
 
 我们用一个简单的例子来说明下：在网页上有一个 div 标签，它的背景颜色不断地在变，像下面图中显示的那样。
 
-<Image src="/posts/css/change-background-min.gif"  width="200" height="200" alt="Image" />
+<Image src="assets/change-background-min.gif"  width="200" height="200" alt="Image" />
 
 怎样描述这种变化呢？我们可以说“开始时蓝色，到一半时变成橙色，最后变成绿色”
 
@@ -159,11 +159,11 @@ keyframes 是用来描述动画过程中一系列变化的。
 
 结合下面的例子，我们可以看出，上面的百分比指的是在动画过程中，其对应的 keyframe 发生的“时间点”。还可以知道，我们只要告诉浏览器开始、中间和结束时的颜色就可以了，在这些状态之间变化时，浏览器会自动去计算颜色值的插值。
 
-<Image src="/posts/css/simple-keyframes-min.gif"  width="400" height="200" alt="Image" />
+<Image src="assets/simple-keyframes-min.gif"  width="400" height="200" alt="Image" />
 
 前面提到过，使用 animation-direction 可以让动画来回交替变化，看下面的例子，直观地感受下：
 
-<Image src="/posts/css/simple-keyframes-alternating-min.gif"  width="400" height="200" alt="Image" />
+<Image src="assets/simple-keyframes-alternating-min.gif"  width="400" height="200" alt="Image" />
 
 ## Transition vs Animation
 
@@ -171,37 +171,37 @@ transition 是指从一种状态到另一种状态（A 到 B）的变化，通�
 
 animation 更加复杂一些，它允许你按照实际需求添加很多的 keyframes 来创建动画。它可以自动触发，并且可以循环。
 
-<Image src="/posts/css/transitions-animations-min.gif"  width="400" height="404" alt="Image" />
+<Image src="assets/transitions-animations-min.gif"  width="400" height="404" alt="Image" />
 
 ## 常见的时间函数（timing-function）
 
 ### Linear 线性
 
-<Image src="/posts/css/linear-example-min.gif"  width="400" height="404" alt="Image" />
+<Image src="assets/linear-example-min.gif"  width="400" height="404" alt="Image" />
 
 linear 表示属性值按照一个固定的速度线性的变化，中间不会有突变，所以不会出现加快或减慢的状态。非常适合速度不变的场景下使用，比如车窗外不断飞过的风景或者一直旋转的月亮。
 
 ### Ease-in 轻松进入
 
-<Image src="/posts/css/ease-in-min.gif"  width="400" height="404" alt="Image" />
+<Image src="assets/ease-in-min.gif"  width="400" height="404" alt="Image" />
 
 ease-in 表示属性值先以较慢速度变化，然后速度越来越快，就好比一个球从高处落下，一开始下降的速度很慢，然后越来越快。
 
 ### Ease-out 缓和
 
-<Image src="/posts/css/ease-out-min.gif"  width="400" height="404" alt="Image" />
+<Image src="assets/ease-out-min.gif"  width="400" height="404" alt="Image" />
 
 ease-out 刚好跟 ease-in 相反，一开始速度快，然后速度越来越慢。最适合元素从屏外进入屏内进行显示的情况。
 
 ### Ease-in-out 轻松进出
 
-<Image src="/posts/css/ease-in-out-min.gif"  width="400" height="404" alt="Image" />
+<Image src="assets/ease-in-out-min.gif"  width="400" height="404" alt="Image" />
 
 ease-in-out 是上面两个的合成，一开始慢，然后变快，然后又变慢。做加载的效果时用这个时间函数效果会很不错。
 
 ### Cubic-bezier 立方贝塞尔
 
-<Image src="/posts/css/cubic-bezier-min.gif"  width="400" height="404" alt="Image" />
+<Image src="assets/cubic-bezier-min.gif"  width="400" height="404" alt="Image" />
 
 上面所讲的时间函数本质上都是贝塞尔曲线。利用 cubic-bezier 我们可以自定义具体的变化曲线。
 
@@ -211,14 +211,14 @@ cubic-bezier 有 4 个参数，代表两个控制点的坐标。
 
 两个控制点坐标为 (1, -0.49) 和 (.13, 1.09)，画个坐标系来看一下：
 
-<Image src="/posts/css/cubic-bezier-graph.png"  width="400" height="404" alt="Image" />
+<Image src="assets/cubic-bezier-graph.png"  width="400" height="404" alt="Image" />
 
 ### Steps 步骤
 
-<Image src="/posts/css/steps-min.gif"  width="400" height="404" alt="Image" />
+<Image src="assets/steps-min.gif"  width="400" height="404" alt="Image" />
 
 目前为止讲过的时间函数（速度的变化）都是连续的曲线，steps 可以将过渡时间分成大小相等的时间时隔来运行。比如使用 steps(4)，效果就会变成如上图那样不连续的效果。
 
-<Image src="/posts/css/steps.png"  width="400" height="404" alt="Image" />
+<Image src="assets/steps.png"  width="400" height="404" alt="Image" />
 
 这适合做精灵动画(sprite animation)。比如一个精灵动画有 4 帧，设置 steps，就可以通过改变 background position 来创建动画了。
