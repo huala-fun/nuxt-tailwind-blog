@@ -1,6 +1,6 @@
 import colors from "tailwindcss/colors";
 import typography from "@tailwindcss/typography";
-
+import defaultTheme from "tailwindcss/defaultTheme";
 export default {
   darkMode: "class",
   plugins: [typography()],
@@ -8,6 +8,9 @@ export default {
     extend: {
       colors: {
         primary: colors.emerald,
+      },
+      fontFamily: {
+        sans: ["Roboto", ...defaultTheme.fontFamily.sans],
       },
     },
   },

@@ -10,12 +10,8 @@
 </template>
 
 <script setup>
-import { createApp } from "vue";
-const route = useRoute();
-const isPost = route.path.startsWith("/post");
-import CodeCopyButton from "~/components/CodeCopyButton.vue";
-
-const isShowTop = ref(false);
+import { render } from "vue";
+import { CodeCopyButton } from "#components";
 
 const backToTop = () => {
   window.scrollTo({
@@ -24,25 +20,27 @@ const backToTop = () => {
   });
 };
 
-const handleScroll = () => {
-  if (window.scrollY > 100) {
-    isShowTop.value = true;
-  } else {
-    isShowTop.value = false;
-  }
+const isShowTop = ref(false);
+const watchScroll = () => {
+  isShowTop.value = window.scrollY > 100;
 };
 
 onMounted(() => {
-  window.addEventListener("scroll", handleScroll);
+  const route = useRoute();
+  const isPost = route.path.startsWith("/post");
+  window.addEventListener("scroll", watchScroll);
+
   if (isPost) {
-    console.log("ddd");
     setTimeout(() => {
       const blocks = document.querySelectorAll("pre");
       for (const block of blocks) {
-        const el = document.createElement("div");
-        createApp(CodeCopyButton).mount(el);
-        block.appendChild(el.firstElementChild);
+        const div = document.createElement("div");
+        const vnode = h(CodeCopyButton, {
+          block,
+        });
         block.style.position = "relative";
+        render(vnode, div);
+        block.appendChild(vnode.el);
       }
     }, 100);
   }
