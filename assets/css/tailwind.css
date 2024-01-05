@@ -17,6 +17,14 @@
     @apply bg-gray-50 text-black dark:bg-gray-900 dark:text-white;
   }
 
+  .posts {
+    @apply hover:prose-a:before:content-['#'] 
+    prose-a:hover:before:-left-4 
+     prose-a:hover:relative
+     prose-a:hover:before:text-primary-400
+      prose-a:hover:before:absolute;
+  }
+
   /* 通用滚动条样式，适用于所有滚动条 */
   *::-webkit-scrollbar {
     width: 4px !important;
