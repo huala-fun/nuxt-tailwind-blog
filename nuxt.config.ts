@@ -2,19 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    "nuxt-content-assets",
     "@nuxt/content",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "nuxt-icon",
-    "@nuxtjs/google-fonts",
   ],
-  googleFonts: {
-    families: {
-      download: false,
-      Roboto: [100, 300, 400, 500, 700, 900],
-    },
-  },
   // https://color-mode.nuxtjs.org
   colorMode: {
     classSuffix: "",
