@@ -1,6 +1,6 @@
 <template>
-  <pre :class="`${$props.class} relative`"><slot /> 
-    <div class="copy absolute top-3 right-3 inline-flex cursor-pointer">
+  <pre :class="`${$props.class} relative flex`"><slot /> 
+    <div class="copy absolute top-3 right-3 inline-flex cursor-pointer text-slate-800 dark:text-slate-300">
       <IconsBICopy v-show="!copyState"  class="w-4 h-4" />
       <IconsBiCheckLg v-show="copyState"  class="w-4 h-4" />
     </div></pre>
