@@ -6,9 +6,9 @@ const appConfig = useAppConfig();
   <div class="flex justify-center px-4 py-4 mx-auto sm:px-8 gap-4">
     <!-- Navigation -->
     <div class="text-gray-700 dark:text-gray-200 flex gap-4">
-      <NuxtLink key="/" to="/" active-class="font-bold"> Home </NuxtLink>
+      <NuxtLink key="/" to="/" active-class="font-bold"> 首页 </NuxtLink>
       <NuxtLink key="/about" to="/about" active-class="font-bold">
-        About
+        关于
       </NuxtLink>
     </div>
     <!-- Social icons & Color Mode -->

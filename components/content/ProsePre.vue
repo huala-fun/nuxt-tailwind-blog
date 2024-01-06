@@ -1,8 +1,8 @@
 <template>
   <pre :class="`${$props.class} relative flex`"><slot /> 
     <div class="copy absolute top-3 right-3 inline-flex cursor-pointer text-slate-800 dark:text-slate-300">
-      <IconsBICopy v-show="!copyState"  class="w-4 h-4" />
-      <IconsBiCheckLg v-show="copyState"  class="w-4 h-4" />
+      <IconsOcticonCopy16 v-show="!copyState"  class="w-4 h-4  stroke-gray-300" />
+      <IconsBiCheckLg v-show="copyState"  class="w-4 h-4 stroke-gray-300" />
     </div></pre>
 </template>
 
