@@ -12,7 +12,7 @@ const appConfig = useAppConfig();
       </NuxtLink>
     </div>
     <!-- Social icons & Color Mode -->
-    <div class="space-x-3 transition text-gray-500">
+    <div class="transition text-gray-500 flex gap-4">
       <a
         v-if="appConfig.socials?.github"
         :href="`https://github.com/${appConfig.socials?.github}`"
