@@ -17,6 +17,11 @@
     @apply bg-gray-50 text-black dark:bg-gray-900 dark:text-white;
   }
 
+  .prose {
+    @apply prose-a:border-none
+    hover:prose-a:border-solid !important;
+  }
+
   .posts {
     @apply hover:prose-a:before:content-['#'] 
     prose-a:hover:before:-left-4 
