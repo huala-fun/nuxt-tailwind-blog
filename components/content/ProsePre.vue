@@ -1,5 +1,5 @@
 <template>
-  <pre :class="$props.class" class="flex pr-6"><slot /></pre>
+  <pre :class="$props.class" class="flex pr-10"><slot /></pre>
 </template>
 
 <script setup lang="ts">
@@ -37,11 +37,12 @@ pre :deep(code) .line {
 }
 
 pre :deep(.copy) {
-  display: none;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
 pre:hover :deep(.copy) {
-  display: inline-flex;
+  opacity: 1;
 }
 
 pre :deep(code) {

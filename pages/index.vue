@@ -8,10 +8,12 @@
           </NuxtLink>
           <p>{{ article.description }}</p>
           <div class="flex gap-2">
-            <span
+            <NuxtLink
               class="text-gray-400 text-sm cursor-pointer"
               v-for="tag in article.tags"
-              >{{ tag }}</span
+              :key="tag"
+              :to="`/tag/${tag}`"
+              >{{ tag }}</NuxtLink
             >
           </div>
         </Card>
