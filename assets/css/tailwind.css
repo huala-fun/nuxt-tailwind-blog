@@ -27,7 +27,9 @@
     prose-a:hover:before:-left-4 
      prose-a:hover:relative
      prose-a:hover:before:text-primary-400
-      prose-a:hover:before:absolute;
+      prose-a:hover:before:absolute
+      text-base
+      prose-headings:my-4 !important;
   }
 
   /* 通用滚动条样式，适用于所有滚动条 */
