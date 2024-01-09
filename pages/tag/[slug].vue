@@ -1,11 +1,14 @@
 <template>
-  {{route.path}}
+  {{params.path}}
 </template>
 
 <script setup>
-const route = useRoute();
+const {params} = useRoute();
+const { data } = await useAsyncData('home', () => queryContent('/').findOne())
+
+console.log(data);
 
 useHead({
-  title: `标签 - ${route.params.slug}`,
+  title: `标签 - ${params.slug}`,
 });
 </script>
