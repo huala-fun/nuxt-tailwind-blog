@@ -1,6 +1,6 @@
 <template>
   <blockquote
-    class="bg-slate-100 inline-flex px-2 w-full dark:bg-gray-600 rounded-r-md">
+    class="">
     <slot />
   </blockquote>
 </template>
