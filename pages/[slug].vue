@@ -2,10 +2,6 @@
   <Card class="posts">
     <ContentDoc :path="$route.path" />
   </Card>
-  <IconsTdesignBacktop
-    @click="backTop"
-    v-show="showBackTop"
-    class="w-6 h-6 fixed right-4 bottom-8 cursor-pointer" />
 </template>
 
 <script setup>

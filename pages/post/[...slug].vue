@@ -5,7 +5,7 @@
   <div
     v-show="showBackTop"
     @click="backTop"
-    class="w-8 h-8 flex justify-center items-center fixed right-4 bottom-4 text-white cursor-pointer bg-blue-500 rounded-full m-4">
+    class="w-8 h-8 flex justify-center items-center fixed right-6 bottom-12 text-white cursor-pointer bg-blue-500 rounded-full">
     <IconsTdesignBacktop class="w-5 h-5 text-white" />
   </div>
 </template>
