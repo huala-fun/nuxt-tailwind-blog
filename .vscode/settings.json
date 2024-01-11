@@ -1,8 +1,5 @@
 {
     "css.lint.unknownAtRules": "ignore",
     "files.exclude": {
-        ".nuxt": true,
-        ".output": true,
-        "**/node_modules": true
     }
 }

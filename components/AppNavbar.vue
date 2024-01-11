@@ -14,8 +14,7 @@ const appConfig = useAppConfig();
     <!-- Social icons & Color Mode -->
     <div class="transition text-gray-500 flex gap-4">
       <a
-        v-if="appConfig.socials?.github"
-        :href="`https://github.com/${appConfig.socials?.github}`"
+        :href="`https://github.com/huala-fun/nuxt-tailwind-blog`"
         target="_blank"
         title="GitHub"
         class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300"
