@@ -1,5 +1,5 @@
 ---
-title: Flex 布局
+title: CSS Flex 布局
 description: 学习 CSS Animation 101 的随堂笔记
 date: "2023-06-01"
 tags:
@@ -9,21 +9,20 @@ tags:
 ---
 
 
-Flex属性值
-flex属性值可以为1个、2个、3个以及关键字属性值
-对应：
-flex: flex-grow flex-shrink flex-basis;
+## Flex 属性
 
-1、一个值
-如果flex的属性值只有一个值，则： 如果是数值，例如flex: 1，则这个1表示flex-grow，此时flex-shrink和flex-basis都使用默认值，分别是1和auto。 如果是长度值，例如flex: 100px，则这个100px显然指flex-basis，因为3个缩写CSS属性中只有flex-basis的属性值是长度值。此时flex-grow和flex-shrink都使用默认值，分别是0和1。
+在CSS中，`flex`属性是`flex-grow`、`flex-shrink`和`flex-basis`三个属性的简写形式。它指定了弹性盒子内的弹性项目（flex item）的伸缩性。以下是如何使用它的方法：
 
-2、两个值
-如果flex的属性值有两个值，则第1个值一定指flex-grow，第2个值根据值的类型不同表示不同的CSS属性，具体规则如下： 如果第2个值是数值，例如flex: 1 2，则这个2表示flex-shrink，此时flex-basis使用默认值auto。 如果第2个值是长度值，例如flex: 1 100px，则这个100px指flex-basis，此时flex-shrink都使用默认值0。
+1. **flex-grow**：这个属性定义了弹性项目在必要时增长的能力。它接受一个无单位的比例值，表示弹性项目应该占据弹性容器内可用空间的多少。
 
-3、三个值
-如果flex的属性值有三个值，则这3个值分别表示flex-grow，flex-shrink和flex-basis。grow是放大，shrink是收缩，而basis是基准。
+2. **flex-shrink**：这个属性定义了弹性项目在必要时缩小的能力。与`flex-grow`一样，它也接受一个无单位的比例值，表示在分配负空间时弹性项目相对于容器中其他弹性项目的收缩量。
 
-4、关键字属性值
-flex: initial等同于设置flex: 0 1 auto
-flex: auto等同于设置flex: 1 1 auto
-flex: none等同于设置flex: 0 0 auto
+3. **flex-basis**：这个属性定义了分配剩余空间之前元素的默认大小。它可以是一个长度值（例如`20%`，`5rem`等）或一个关键字。关键字`auto`表示查看我的宽度或高度属性。
+
+`flex`属性是可选的，你不必指定`flex-grow`、`flex-shrink`和`flex-basis`的所有三个值。你可以指定其中一个、两个或全部三个。以下是一些例子：
+
+- `flex: 1;` 等同于 `flex: 1 1 0%;`，意味着`flex-grow`是1，`flex-shrink`是1，`flex-basis`是0%。
+- `flex: 2 2;` 等同于 `flex: 2 2 auto;`，意味着`flex-grow`是2，`flex-shrink`是2，`flex-basis`是`auto`。
+- `flex: 10px;` 等同于 `flex: 1 1 10px;`，将`flex-basis`设置为10px，并使用1作为`flex-grow`和`flex-shrink`的默认值。
+
+当使用`flex`属性时，如果你省略了一个或两个值，浏览器将会为缺失的值设置默认值。`flex-grow`的默认值是0，`flex-shrink`的默认值是1，`flex-basis`的默认值是`auto`。
