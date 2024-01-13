@@ -1,6 +1,4 @@
-# Content v2 Minimal Starter
-
-Look at the [Content documentation](https://content.nuxt.com/) to learn more.
+# 基于 Nuxt + Tailwind CSS 的博客
 
 ## Setup
 
@@ -38,5 +36,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
