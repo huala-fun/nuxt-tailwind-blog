@@ -1,8 +1,8 @@
 # 基于 Nuxt + Tailwind CSS 的博客
 
-## Setup
+## 安装依赖
 
-Make sure to install the dependencies:
+安装 package.json 中的所有依赖
 
 ```bash
 # yarn
@@ -15,23 +15,23 @@ npm install
 pnpm install
 ```
 
-## Development Server
+## 开发服务
 
-Start the development server on http://localhost:3000
+在本地启动服务 http://localhost:3000
 
 ```bash
 npm run dev
 ```
 
-## Production
+## 生产构建
 
-Build the application for production:
+构建生产应用
 
 ```bash
 npm run build
 ```
 
-Locally preview production build:
+本地生产预览
 
 ```bash
 npm run preview
